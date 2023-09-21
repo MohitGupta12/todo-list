@@ -211,7 +211,7 @@ function App() {
           <h1 className="text-zinc-500 p-4  text-2xl font-bold text-start">
             Completed List
           </h1>
-          {renderCompleteTaskList(completeTaskList)}
+          {renderCompleteTaskList(completeTaskList, deleteHandler)}
         </div>
       </div>
     </>
