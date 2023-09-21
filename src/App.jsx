@@ -22,17 +22,22 @@ function App() {
 
   const [task, setTask] = useState({ title: "", desc: "", uid: uuid() });
   const [taskList, setTaskList] = useState([]);
+  const [completeTaskList, setCompleteTaskList] = useState([]);
 
   const submitHandler = () => {
     addTask(task);
     setTask({ title: "", desc: "", uid: uuid() });
   };
 
+  const deleteHandler = (id) => {
+    setTaskList((prevTaskList) => prevTaskList.filter((t) => t.uid !== id));
+  };
+
   const addTask = (task) => {
     setTaskList((prevTaskList) => [...prevTaskList, task]);
   };
 
-  const renderTaskList = (taskList) => {
+  const renderTaskList = (taskList, deleteTask) => {
     if (taskList.length > 0) {
       {
         return (
@@ -58,7 +63,10 @@ function App() {
                   <button className="bg-green-300 h-10 w-10 p-2 mx-2 border-2 cursor-pointer rounded-lg border-green-400 ">
                     <CheckBadgeIcon height={22} width={22} />
                   </button>
-                  <button className="bg-red-300  h-10 w-10 p-2 mx-2 border-2 border-red-400 cursor-pointer rounded-lg">
+                  <button
+                    onClick={() => deleteTask(task.uid)}
+                    className="bg-red-300  h-10 w-10 p-2 mx-2 border-2 border-red-400 cursor-pointer rounded-lg"
+                  >
                     <TrashIcon height={22} width={22} />
                   </button>
                 </div>
@@ -75,6 +83,8 @@ function App() {
       );
     }
   };
+
+  const renderCompleteTaskList = () => {};
 
   return (
     <>
@@ -135,14 +145,14 @@ function App() {
           <h1 className="text-zinc-500 p-4  text-3xl font-extrabold text-start">
             Task List
           </h1>
-          {renderTaskList(taskList)}
+          {renderTaskList(taskList, deleteHandler)}
         </div>
 
         <div className="bg-slate-200 border-2 border-slate-400 rounded-xl h-fit w-1/3 py-2 px-1">
           <h1 className="text-zinc-500 p-4  text-2xl font-bold text-start">
             Completed List
           </h1>
-          <div className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between">
+          {/* <div className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between">
             <div>
               <div className=" m-1 text-xl font-bold  text-[hsl(0,100%,12%)] ">
                 Title
@@ -156,7 +166,7 @@ function App() {
                 <TrashIcon height={22} width={22} />
               </button>
             </div>
-          </div>{" "}
+          </div> */}
         </div>
       </div>
     </>
