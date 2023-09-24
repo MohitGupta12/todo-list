@@ -25,10 +25,6 @@ const MainForm = () => {
   const [completeTaskList, setCompleteTaskList] = useState([]);
 
   const submitHandler = (e) => {
-    // const id = uuid();
-    // console.log(id);
-    // setTask({ ...task, uid: id });
-    // console.log(task);
     addTask(task);
 
     setTask({ title: "", desc: "", uid: "" });
@@ -45,10 +41,9 @@ const MainForm = () => {
   };
 
   const completeHandler = (id, taskList) => {
-    // remove elem with that id from taskList
     const completeTask = taskList.filter((t) => t.uid === id);
     deleteHandler(id, taskList);
-    // add that elem to completeTaskList
+
     setCompleteTaskList((prevCompleteTaskList) => [
       ...prevCompleteTaskList,
       completeTask[0],
@@ -64,28 +59,11 @@ const MainForm = () => {
     setIsEditing(true);
   };
 
-  // const onUpdate = (editTask) => {
-  //   setTaskList((prevTaskList) => {
-  //     prevTaskList.map((t) => {
-  //       if (t.uid === editTask.uid) return { ...editTask };
-  //       else t;
-  //     });
-  //   });
-  // };
   const onUpdate = (editTask) => {
-    // setTaskList((prevTaskList) => {
-    //   prevTaskList.map((task) => {
-    //     if (task.uid === editTask.uid) {
-    //       return { ...editTask };
-    //     }
-    //     return task;
-    //   });
-    // });
     const index = taskList.findIndex((task) => task.uid === editTask.uid);
 
     console.log("editTask.uid:", editTask.uid);
 
-    // Print all task.uid values in taskList for debugging
     console.log(
       "taskList:",
       taskList.map((task) => task)
@@ -94,13 +72,11 @@ const MainForm = () => {
     console.log("index:", index);
 
     if (index !== -1) {
-      // Create a new array with the updated task
       const updatedTaskList = [...taskList];
       console.log(updatedTaskList);
       updatedTaskList[index] = editTask;
       setTaskList([...updatedTaskList]);
     }
-    // setIsEditing(false);
   };
 
   const renderTaskList = (taskList, onDelete, onComplete, enterEditMode) => {
