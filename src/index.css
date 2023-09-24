@@ -31,18 +31,7 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  transition: border-color 0.25s;
-}
 
-button:hover {
-  border-color: #1ae0ff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 1px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -58,23 +47,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 
-  [role="dialog"] {
-    position: fixed;
-    z-index: 100;
-    inset: 0;
-    padding-inline: 2vmax;
-    display: grid;
-    place-items: center;
-    background-color: hsl(var(--bg) / 0.7);
-  }
-
-  [role="dialog"] .todo {
-    max-width: 40ch;
-    padding: 2em 1.3em 1.3em;
-    background-color: hsl(var(--bg));
-    border-radius: var(--_radius);
-    border: 0.1em solid hsl(var(--accent) / 0.3);
-    box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
-  }
 
 }

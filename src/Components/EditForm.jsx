@@ -80,7 +80,7 @@ const EditForm = ({ task, onUpdate, IsEditing, onClose }) => {
                 Update
               </button>
               <button
-                className="bg-red-300 border-red-500/40 shadow-md shadow-red-700/60 transition ease-in-out duration-300 hover:shadow-red-300/60 border-2 mb-2 mt-4 mx-12 px-2 py-2 rounded-md flex justify-center items-center"
+                className="bg-red-300  border-red-500/40 shadow-md shadow-red-700/60 transition ease-in-out duration-300 hover:shadow-red-300/60 border-2 mb-2 mt-4 mx-12 px-2 py-2 rounded-md flex justify-center items-center"
                 onClick={onClose}
               >
                 <XMarkIcon

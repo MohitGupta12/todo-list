@@ -61,19 +61,8 @@ const MainForm = () => {
 
   const onUpdate = (editTask) => {
     const index = taskList.findIndex((task) => task.uid === editTask.uid);
-
-    console.log("editTask.uid:", editTask.uid);
-
-    console.log(
-      "taskList:",
-      taskList.map((task) => task)
-    );
-
-    console.log("index:", index);
-
     if (index !== -1) {
       const updatedTaskList = [...taskList];
-      console.log(updatedTaskList);
       updatedTaskList[index] = editTask;
       setTaskList([...updatedTaskList]);
     }
@@ -86,8 +75,7 @@ const MainForm = () => {
           <ul>
             {taskList.map((task) => (
               <li
-                className=" bg-neutral-300 border-2 border-neutral-400 h-20 my-2.5 mx-4 rounded-lg py-1 
-                px-2 flex justify-between"
+                className=" bg-neutral-300 border-2 border-neutral-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between shadow-xl shadow-neutral-700/60 transition ease-in-out duration-300 hover:shadow-neutral-500/60"
                 key={task.uid}
               >
                 <div>
@@ -100,19 +88,19 @@ const MainForm = () => {
                 </div>
                 <div className=" flex justify-center items-center ">
                   <button
-                    className="bg-yellow-300  cursor-pointer rounded-lg  h-10 w-10 p-2 mx-2 border-2 border-yellow-400  "
+                    className="bg-yellow-300  cursor-pointer rounded-lg  h-10 w-10 p-2 mx-2   shadow-md shadow-yellow-500/60 transition ease-in-out duration-300 hover:shadow-yellow-300/60 border-yellow-400 border-2  "
                     onClick={() => enterEditMode(task)}
                   >
                     <PencilIcon height={22} width={22} />
                   </button>
                   <button
-                    className="bg-green-300 h-10 w-10 p-2 mx-2 border-2 cursor-pointer rounded-lg border-green-400 "
+                    className="bg-green-300   shadow-md shadow-green-500/60 transition ease-in-out duration-300 hover:shadow-green-300/60 h-10 w-10 p-2 mx-2 border-2 cursor-pointer rounded-lg border-green-400 "
                     onClick={() => onComplete(task.uid, taskList)}
                   >
                     <CheckBadgeIcon height={22} width={22} />
                   </button>
                   <button
-                    className="bg-red-300  h-10 w-10 p-2 mx-2 border-2 border-red-400 cursor-pointer rounded-lg"
+                    className="bg-red-300  h-10 w-10 p-2 mx-2 border-2  border-red-400 shadow-md shadow-red-500/60 transition ease-in-out duration-300 hover:shadow-red-300/60 cursor-pointer rounded-lg"
                     onClick={() => onDelete(task.uid, taskList)}
                   >
                     <TrashIcon height={22} width={22} />
@@ -139,7 +127,8 @@ const MainForm = () => {
           {completeTaskList.map((compTask) => {
             return (
               <li
-                className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between"
+                className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between
+                shadow-xl shadow-green-700/60 transition ease-in-out duration-300 hover:shadow-green-500/60"
                 key={compTask.uid}
               >
                 <div>
@@ -152,7 +141,7 @@ const MainForm = () => {
                 </div>
                 <div className=" flex justify-center items-center ">
                   <button
-                    className="bg-red-300  h-10 w-10 p-2 mx-2 border-2 border-red-400 "
+                    className="bg-red-500   border-red-700/40 shadow-md shadow-red-700/60 transition ease-in-out duration-300 hover:shadow-red-300/60  h-10 w-10 p-2 mx-2 border-2 cursor-pointer rounded-lg"
                     onClick={() => onDelete(compTask.uid, completeTaskList)}
                   >
                     <TrashIcon height={22} width={22} />
@@ -174,8 +163,7 @@ const MainForm = () => {
 
   return (
     <>
-      {" "}
-      <h1 className="bg-zinc-800  text-white w-screen p-4 text-4xl font-bold text-center">
+      <h1 className="bg-zinc-800  text-white w-screen p-4 text-4xl font-extrabold text-center">
         ToDo List
       </h1>
       <EditForm
@@ -232,8 +220,8 @@ const MainForm = () => {
         ) : null}
       </form>
       <div className="  h-[calc(100vh-15rem)]  flex flex-row justify-evenly items-start pt-2">
-        <div className="bg-slate-200 border-2 border-slate-400 rounded-xl h-fit w-1/3 py-2 px-1 ">
-          <h1 className="text-zinc-500 p-4  text-3xl font-extrabold text-start">
+        <div className="bg-slate-200 border-4 border-slate-400 rounded-xl h-fit w-1/3 py-2 px-1 shadow-2xl shadow-slate-500/60 ">
+          <h1 className="text-zinc-700 p-4  text-2xl font-extrabold text-start">
             Task List
           </h1>
           {renderTaskList(
@@ -244,8 +232,8 @@ const MainForm = () => {
           )}
         </div>
 
-        <div className="bg-slate-200 border-2 border-slate-400 rounded-xl h-fit w-1/3 py-2 px-1">
-          <h1 className="text-zinc-500 p-4  text-2xl font-bold text-start">
+        <div className="bg-slate-200 border-4 border-slate-400 rounded-xl h-fit w-1/3 py-2 px-1  shadow-2xl shadow-slate-500/60 ">
+          <h1 className="text-zinc-700 p-4  text-2xl font-extrabold text-start">
             Completed List
           </h1>
           {renderCompleteTaskList(completeTaskList, deleteHandler)}
