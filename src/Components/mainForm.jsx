@@ -12,6 +12,7 @@ import {
 import EditForm from "./EditForm";
 
 const MainForm = () => {
+  const capacity = 3;
   const {
     register,
     handleSubmit,
@@ -41,17 +42,52 @@ const MainForm = () => {
   };
 
   const completeHandler = (id, taskList) => {
+    // delete task form taskList
+    // add that to completeTaskList
+    //   and if completeTaskList's length is greater than capacity
+    //     then remove oldest task and add remaining task to a temp array
+    //     then add task to that temp array and the setCompleteTaskList to temp array
+
     const completeTask = taskList.filter((t) => t.uid === id);
     deleteHandler(id, taskList);
 
-    setCompleteTaskList((prevCompleteTaskList) => [
-      ...prevCompleteTaskList,
-      completeTask[0],
-    ]);
+    if (completeTaskList.length < capacity) {
+      setCompleteTaskList((prevCompleteTaskList) => [
+        ...prevCompleteTaskList,
+        completeTask[0],
+      ]);
+    } else {
+      setCompleteTaskList(
+        (prevCompleteTaskList) => {
+          const [, ...remainingCompletedTasks] = prevCompleteTaskList;
+          return [...remainingCompletedTasks, completeTask[0]];
+        }
+
+        // (prevCompletedTasks) => {
+        // const newCompletedTasks = prevCompletedTasks.splice(1);
+        // console.log(newCompletedTasks);
+        // return [...newCompletedTasks, completeTask[0]];
+        // }
+      );
+    }
   };
 
   const addTask = (task) => {
-    setTaskList((prevTaskList) => [...prevTaskList, { ...task, uid: uuid() }]);
+    // if taskList's length is greater than capacity
+    //     then remove oldest task and add remaining task to a temp array
+    //     then add task to that temp array and the setTaskList to temp array
+
+    if (taskList.length < capacity) {
+      setTaskList((prevTaskList) => [
+        ...prevTaskList,
+        { ...task, uid: uuid() },
+      ]);
+    } else {
+      setTaskList((prevTaskList) => {
+        let [, ...remainingTasks] = prevTaskList;
+        return [...remainingTasks, { ...task, uid: uuid() }];
+      });
+    }
   };
 
   const enterEditMode = (task) => {
@@ -122,13 +158,14 @@ const MainForm = () => {
 
   const renderCompleteTaskList = (completeTaskList, onDelete) => {
     if (completeTaskList.length > 0) {
+      const reversedCompleteTaskList = [...completeTaskList].reverse();
+
       return (
         <ul>
-          {completeTaskList.map((compTask) => {
+          {reversedCompleteTaskList.map((compTask) => {
             return (
               <li
-                className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between
-                shadow-xl shadow-green-700/60 transition ease-in-out duration-300 hover:shadow-green-500/60"
+                className=" bg-green-300 border-2 border-green-400 h-20 my-2.5 mx-4 rounded-lg py-1 px-2 flex justify-between shadow-xl shadow-green-700/60 transition ease-in-out duration-300 hover:shadow-green-600/60"
                 key={compTask.uid}
               >
                 <div>
