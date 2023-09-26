@@ -1,6 +1,7 @@
 # Todo List App
 
-![Screenshot 2023-09-26 184015](https://github.com/MohitGupta12/todo-list/assets/70692495/fcc8fc06-bf2c-4b5b-b249-2fa43a376e62)
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/home.png" alt="Home" >
+
 
 ## Overview
 
@@ -23,19 +24,28 @@ The Todo List App is a simple task management application built using React.js, 
 
 ## Screenshots
 
-Task 
-<img src="https://github.com/MohitGupta12/todo-list/blob/main/assets/70692495/0e95689d-6c20-451f-9b2a-ed723e0bf6b3.png" alt="Task List" width="400">
+__Task__ 
 
-Completed Task 
-![Screenshot 2023-09-26 184110](https://github.com/MohitGupta12/todo-list/assets/70692495/6b937685-c7be-4ec0-9231-92b1bb6926f6)
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/task.png" alt="completed List"  height= "150" width="600">
 
-Editing Modal
+
+__Completed Task__ 
+
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/completed%20task.png" alt="completed List"  height= "150" width="600">
+
+
+__Editing Modal__
+
 ![Screenshot 2023-09-26 184423](https://github.com/MohitGupta12/todo-list/assets/70692495/03ae9ce7-c42e-4a68-b9fb-dabcd47da871)
 
-Updated Task
+
+__Updated Task__
+
 ![Screenshot 2023-09-26 184431](https://github.com/MohitGupta12/todo-list/assets/70692495/0f952a1d-3701-4455-bc73-aa929bc02d07)
 
-Deleting Task
+
+__Deleting Task__
+
 ![Screenshot 2023-09-26 184453](https://github.com/MohitGupta12/todo-list/assets/70692495/10ed4c62-2f7f-44a7-bbe7-f345f2d86b69)
 
 
@@ -90,8 +100,11 @@ Now you should have the Todo List App running locally on your machine, utilizing
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, you can contribute by 
+ 
   -Improving Styling
+  
   -Adding Theme (light and dark)
+  
   -Optimizing Code  
   
 
