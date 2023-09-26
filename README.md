@@ -28,20 +28,23 @@ The Todo List App is a simple task management application built using React.js, 
 
 Task 
 
-<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/task.png" alt="completed List"  height= "100" width="600">
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/task.png" alt="completed List"  height= "150" width="600">
 
 Completed Task 
 
-<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/completed%20task.png" alt="completed List"  height= "100" width="600">
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/completed%20task.png" alt="completed List"  height= "150" width="600">
 
 
 Editing Modal
+
 ![Screenshot 2023-09-26 184423](https://github.com/MohitGupta12/todo-list/assets/70692495/03ae9ce7-c42e-4a68-b9fb-dabcd47da871)
 
 Updated Task
+
 ![Screenshot 2023-09-26 184431](https://github.com/MohitGupta12/todo-list/assets/70692495/0f952a1d-3701-4455-bc73-aa929bc02d07)
 
 Deleting Task
+
 ![Screenshot 2023-09-26 184453](https://github.com/MohitGupta12/todo-list/assets/70692495/10ed4c62-2f7f-44a7-bbe7-f345f2d86b69)
 
 
