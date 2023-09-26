@@ -56,6 +56,26 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/your-username/todo-list-app.git
 
+2 Navigate to the project directory:
+
+   ```bash
+   cd todo-list-app
+ 
+3 Install the project dependencies using npm:
+
+bash
+Copy code
+npm install
+Running the Application
+Start the development server with Vite:
+
+bash
+Copy code
+npm run dev
+Open your web browser and access the application at http://localhost:3000.
+
+Now you should have the Todo List App running locally on your machine, utilizing Vite as the build tool, and you can start using it to manage your tasks.
+
 ## Technologies Used
 
 - React.js
