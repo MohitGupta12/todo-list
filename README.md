@@ -53,24 +53,24 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository to your local machine using Git:
 
-   ```bash
-   git clone https://github.com/your-username/todo-list-app.git
+   ```
+   git clone https://github.com/MohitGupta12/todo-list-app.git
    ```
 
 2 Navigate to the project directory:
 
-   ```bash
+   ```
    cd todo-list-app
    ```
 3 Install the project dependencies using npm:
   
-  ```bash
+  ```
   npm install
   ```
 4 Running the Application
  Start the development server with Vite:
 
-  ```bash
+  ``` 
     npm run dev
   ```
 
