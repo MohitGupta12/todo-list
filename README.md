@@ -23,25 +23,38 @@ The Todo List App is a simple task management application built using React.js, 
 
 ## Screenshots
 
-Include screenshots or GIFs of your application to give users a visual representation of how it works. You can use a service like [Imgur](https://imgur.com/) to host your images and provide temporary links in your README.
+Task 
+![Screenshot 2023-09-26 184359](https://github.com/MohitGupta12/todo-list/assets/70692495/0e95689d-6c20-451f-9b2a-ed723e0bf6b3)
 
-![Screenshot 1](temp_link_to_screenshot1)
-![Screenshot 2](temp_link_to_screenshot2)
+Completed Task 
+![Screenshot 2023-09-26 184110](https://github.com/MohitGupta12/todo-list/assets/70692495/6b937685-c7be-4ec0-9231-92b1bb6926f6)
+
+Editing Modal
+![Screenshot 2023-09-26 184423](https://github.com/MohitGupta12/todo-list/assets/70692495/03ae9ce7-c42e-4a68-b9fb-dabcd47da871)
+
+Updated Task
+![Screenshot 2023-09-26 184431](https://github.com/MohitGupta12/todo-list/assets/70692495/0f952a1d-3701-4455-bc73-aa929bc02d07)
+
+Deleting Task
+![Screenshot 2023-09-26 184453](https://github.com/MohitGupta12/todo-list/assets/70692495/10ed4c62-2f7f-44a7-bbe7-f345f2d86b69)
+
 
 ## Getting Started
 
-1. Clone the repository to your local machine.
-git clone https://github.com/your-username/todo-list-app.git
+Follow these steps to get the Todo List App up and running on your local machine:
 
-2. Install the project dependencies.
-npm install
+### Prerequisites
 
+Before you begin, ensure you have the following installed:
 
-3. Start the development server.
-npm start
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/): These are required to run the project.
 
+### Installation
 
-4. Open your web browser and access the application at `http://localhost:3000`.
+1. Clone the repository to your local machine using Git:
+
+   ```bash
+   git clone https://github.com/your-username/todo-list-app.git
 
 ## Technologies Used
 
