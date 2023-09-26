@@ -80,7 +80,7 @@ const EditForm = ({ task, onUpdate, IsEditing, onClose }) => {
             ) : null}
             <div className="flex">
               <button
-                className="bg-green-300 border-green-500/40  shadow-md shadow-green-700/60 transition ease-in-out duration-300 hover:shadow-green-300/60 border-2 mb-2 mt-4 mx-12 px-2 py-2 rounded-md flex justify-center items-center  "
+                className="bg-green-300 border-green-500/40  shadow-md shadow-green-700/60 transition ease-in-out duration-300 hover:shadow-green-300/60 border-2 mb-2 mt-4 mx-12 px-2 py-2 rounded-md flex justify-center items-center"
                 onClick={handleSubmit(submitHandler)}
               >
                 <CheckIcon
