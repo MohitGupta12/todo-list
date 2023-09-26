@@ -30,7 +30,7 @@ Task
 
 Completed Task 
 
-<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/completed%20task.png" alt="completed List" width="400">
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/completed%20task.png" alt="completed List"  height= "300" width="600">
 
 
 Editing Modal
