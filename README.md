@@ -100,8 +100,11 @@ Now you should have the Todo List App running locally on your machine, utilizing
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, you can contribute by 
+ 
   -Improving Styling
+  
   -Adding Theme (light and dark)
+  
   -Optimizing Code  
   
 
