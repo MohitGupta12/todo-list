@@ -1,7 +1,7 @@
 # Todo List App
 
 
-<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/home.png" alt="Task List" width="300" height="200">
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/home.png" alt="Task List" width="700" height="500">
 
 
 
