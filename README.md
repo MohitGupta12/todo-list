@@ -1,6 +1,9 @@
 # Todo List App
 
-![Screenshot 2023-09-26 184015](https://github.com/MohitGupta12/todo-list/assets/70692495/fcc8fc06-bf2c-4b5b-b249-2fa43a376e62)
+
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/home.png" alt="Task List" width="300" height="200">
+
+
 
 ## Overview
 
