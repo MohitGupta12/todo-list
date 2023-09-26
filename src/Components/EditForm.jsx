@@ -1,6 +1,8 @@
 import { useState, useSyncExternalStore, React } from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
 
+import "react-toastify/dist/ReactToastify.css";
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const EditForm = ({ task, onUpdate, IsEditing, onClose }) => {
@@ -16,6 +18,16 @@ const EditForm = ({ task, onUpdate, IsEditing, onClose }) => {
 
   const submitHandler = () => {
     onUpdate(editTask);
+    toast.warn(`Task updated successfully`, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
     onClose();
     // setIsEditing(false);
   };
