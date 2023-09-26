@@ -8,6 +8,7 @@ import {
   PencilIcon,
   PlusIcon,
   TrashIcon,
+  XMarkIcon,
 } from "@heroicons/react/24/solid";
 import EditForm from "./EditForm";
 
