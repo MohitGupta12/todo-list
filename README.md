@@ -26,7 +26,7 @@ The Todo List App is a simple task management application built using React.js, 
 
 ## Screenshots
 
-Task 
+*Task* 
 
 <img src="https://github.com/MohitGupta12/todo-list/blob/main/public/Images/task.png" alt="completed List"  height= "150" width="600">
 
