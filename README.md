@@ -55,24 +55,26 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/todo-list-app.git
+   ```
 
 2 Navigate to the project directory:
 
    ```bash
    cd todo-list-app
- 
+   ```
 3 Install the project dependencies using npm:
+  
+  ```bash
+  npm install
+  ```
+4 Running the Application
+ Start the development server with Vite:
 
-bash
-Copy code
-npm install
-Running the Application
-Start the development server with Vite:
+  ```bash
+    npm run dev
+  ```
 
-bash
-Copy code
-npm run dev
-Open your web browser and access the application at http://localhost:3000.
+Open your web browser and access the application at `http://localhost:3000`.
 
 Now you should have the Todo List App running locally on your machine, utilizing Vite as the build tool, and you can start using it to manage your tasks.
 
@@ -84,23 +86,17 @@ Now you should have the Todo List App running locally on your machine, utilizing
 - `toastify` for displaying toasts
 - `react-hook-form` for form validation
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please follow our [contributing guidelines](CONTRIBUTING.md).
-
-## Acknowledgments
-
-- This project was inspired by [insert inspiration here].
-- Special thanks to the open-source community for their invaluable contributions.
+Contributions are welcome! If you'd like to contribute to this project, you can contribute by 
+  -Improving Styling
+  -Adding Theme (light and dark)
+  -Optimizing Code  
+  
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to us at [your-email@example.com].
+If you have any questions or feedback, feel free to reach out to us at [mohit2412gupta@example.com].
 
 ---
-
-Feel free to modify this template to match the actual structure and content of your README file. Don't forget to replace the temporary image and screenshot links with the actual URLs once you've hosted them. Additionally, make sure to create the necessary license and contributing files if you plan to open-source your project.
