@@ -24,7 +24,7 @@ The Todo List App is a simple task management application built using React.js, 
 ## Screenshots
 
 Task 
-![Screenshot 2023-09-26 184359](https://github.com/MohitGupta12/todo-list/assets/70692495/0e95689d-6c20-451f-9b2a-ed723e0bf6b3)
+<img src="https://github.com/MohitGupta12/todo-list/blob/main/assets/70692495/0e95689d-6c20-451f-9b2a-ed723e0bf6b3.png" alt="Task List" width="400">
 
 Completed Task 
 ![Screenshot 2023-09-26 184110](https://github.com/MohitGupta12/todo-list/assets/70692495/6b937685-c7be-4ec0-9231-92b1bb6926f6)
@@ -52,10 +52,10 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository to your local machine using Git:
-
-   ```
-   git clone https://github.com/MohitGupta12/todo-list-app.git
-   ```
+  
+  ```
+  git clone https://github.com/MohitGupta12/todo-list-app.git
+  ```
 
 2 Navigate to the project directory:
 
