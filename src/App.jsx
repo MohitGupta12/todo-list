@@ -6,7 +6,7 @@ import MainForm from "./Components/mainForm";
 import EditForm from "./Components/EditForm";
 import useLocalStorage from "./Hooks/useLocalStorage";
 import Lists from "./Components/List";
-import showToast from "./Components/ShowToast";
+import showToast from "src/Components/ShowToast.jsx";
 
 function App() {
   const capacity = 5;
